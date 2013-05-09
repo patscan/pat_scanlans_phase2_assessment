@@ -1,0 +1,32 @@
+<div class="container">
+<!--   # create_table :users do |t|
+  #     t.string :first_name, :null => false
+  #     t.string :last_name, :null => false
+  #     t.string :email, :null => false
+  #     t.date :birthdate, :null => false
+  #     t.string :password_digest, :null => false
+  #     t.timestamps
+  #   end
+  #   add_index :users, :email, :unique => true
+  # end -->
+  CREATE AN ACCOUNT<br/>
+  <form action="/register" method="post">
+    <input type="text" name="first_name" placeholder="First Name" /> <br>
+    <input type="text" name="last_name" placeholder="Last Name" /> <br>
+    <input type="text" name="email" placeholder="Email" /><br>
+    <input type="text" name="birthdate" placeholder="e.g., 1980-05-30" /><br>
+    <input type="password" name="password" placeholder="Password" /><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <br/>
+  LOGIN
+  <form action="/login" method="post">
+    <input type="text" name="email" placeholder="Email" /><br>
+    <input type="password" name="password" placeholder="Password" /><br>
+    <input type="submit" value="Submit">
+  </form>
+
+
+
+</div>
